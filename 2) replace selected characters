@@ -1,1 +1,30 @@
+IN PSEUDOCODE 
+#2 
 
+
+//declaration 
+DECLARE str1 ,str2 : string
+DECLARE char1 ,char2 ,char3 : char
+DECLARE i As integer 
+//INITIALIZATION 
+Str1 ← ""
+Str2 ← ""
+Char1 ←''
+Char2 ←''
+i ← 0
+//Input 
+INPUT "enter string to process:",str1
+INPUT "Enter character to find:", char1
+INPUT "enter character to replace:"char3   
+//Process
+for i ← 1 to Len(str1)
+    char2 ← MID(str1,i,1)
+    IF char1<>char2 THEN
+    Str2 ← str2+ char2
+    ELSE 
+    Str2 ← str2 +char3 
+    END IF   
+    NEXT i
+//OUTPUT
+OUTPUT"STRING WITH REPLACED CHARACTERIS:",Str2
+    
