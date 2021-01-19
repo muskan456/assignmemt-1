@@ -1,0 +1,30 @@
+Module Program
+
+    Sub Main()
+
+'declaration 
+dim str1 ,str2 As string
+dim char1 ,char2 ,char3 As char
+dim i As integer 
+'Input
+Console.WriteLine ("enter string to process:")
+   str1= console.ReadLine 
+    Console.WriteLine ("Enter character to find:")    
+     char1 =console.ReadLine     
+    Console.WriteLine ("enter character to replace:")    
+    char3 =console.ReadLine 
+    'Process
+    for i = 1 to Len(str1)
+    char2=MID(str1,i,1)
+    IF char1<>char2 THEN
+    Str2= str2+ char2
+    ELSE 
+    Str2= str2 +char3 
+    END IF   
+    NEXT i
+    'OUTPUT
+    Console.WriteLine("STRING WITH REPLACED CHARACTERIS:")
+    console.ReadKey()
+    End Sub
+
+End Module
